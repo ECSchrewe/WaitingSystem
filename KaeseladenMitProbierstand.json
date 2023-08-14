@@ -1,0 +1,81 @@
+{
+  "name": "Käseladen mit Probierstand",
+  "lambda": 1.6666666,
+  "entrance": {
+    "name": "Eingang",
+    "exits": [
+      {
+        "exitname": "Regal",
+        "p": 0.622222
+      },
+      {
+        "exitname": "Theke",
+        "p": 0.077778
+      },
+      {
+        "exitname": "Probierstand",
+        "p": 0.3
+      }
+    ]
+  },
+  "stations": [
+    {
+      "name": "Probierstand",
+      "mu": 0.666666,
+      "maxServiceSize": 2,
+      "exits": [
+        {
+          "exitname": "Kasse",
+          "p": 0.2
+        },
+        {
+          "exitname": "Regal",
+          "p": 0.5
+        },
+        {
+          "exitname": "Theke",
+          "p": 0.3
+        }
+      ]
+    },
+    {
+      "name": "Regal",
+      "mu": 0.5,
+      "exits": [
+        {
+          "exitname": "Theke",
+          "p": 1
+        },
+        {
+          "exitname": "Kasse",
+          "p": 8
+        }
+      ]
+    },
+    {
+      "name": "Theke",
+      "mu": 0.4166666,
+      "maxServiceSize": 1,
+      "exits": [
+        {
+          "exitname": "Kasse",
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Kasse",
+      "mu": 0.6666666,
+      "maxServiceSize": 3,
+      "exits": [
+        {
+          "exitname": "Ausgang",
+          "p": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Ausgang"
+    }
+  ]
+}
